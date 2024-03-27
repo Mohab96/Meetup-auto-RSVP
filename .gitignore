@@ -1,7 +1,5 @@
 .vscode/
 .env.*
 .env*
-Pipfile
-Pipfile.lock
 __pycache__/
 *.py[cod]
