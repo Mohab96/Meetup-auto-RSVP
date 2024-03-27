@@ -7,6 +7,10 @@ name = "pypi"
 django = "*"
 djangorestframework = "*"
 psycopg2 = "*"
+meetup-api = "*"
+celery = "*"
+django-celery-beat = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 
