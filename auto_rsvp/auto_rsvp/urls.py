@@ -20,8 +20,6 @@ from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
-from auto_rsvp import api, auth
-
 schema_view = get_schema_view(
     openapi.Info(
         title="Meetup Auto RSVP",
@@ -34,8 +32,8 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(api.urls)),
-    path('auth/', include(auth.urls)),
+    path('api/', include('api.urls')),
+    path('auth/', include('auth.urls')),
     path('swagger/', schema_view.with_ui('swagger',
                                          cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc',

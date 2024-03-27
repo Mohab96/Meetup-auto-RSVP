@@ -13,6 +13,10 @@ django-celery-beat = "*"
 djangorestframework-simplejwt = "*"
 python-dotenv = "*"
 drf-yasg = "*"
+django-cors-headers = "*"
+redis = "*"
+django-redis = "*"
+setuptools = "*"
 
 [dev-packages]
 

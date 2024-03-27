@@ -11,10 +11,12 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
 from datetime import timedelta
 from pathlib import Path
 from celery.schedules import crontab
 
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -95,7 +97,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
@@ -160,3 +161,4 @@ SWAGGER_SETTINGS = {
 }
 
 CORS_ORIGIN_ALLOW_ALL = True
+AUTH_USER_MODEL = 'api.User'
