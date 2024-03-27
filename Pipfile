@@ -12,6 +12,7 @@ celery = "*"
 django-celery-beat = "*"
 djangorestframework-simplejwt = "*"
 python-dotenv = "*"
+drf-yasg = "*"
 
 [dev-packages]
 
