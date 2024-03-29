@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    meetup_api_key = models.CharField(max_length=255, blank=True)
+    meetup_api_key = models.CharField(max_length=255)
 
     def __str__(self):
         return self.username
